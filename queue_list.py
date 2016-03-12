@@ -49,7 +49,7 @@ class Queue:
 
     def queue(self, x):
         self.queueList.append(x)
-        return self.queueList
+        return tuple(self.queueList)
 
     def dequeue(self):
         item = self.queueList[0]
